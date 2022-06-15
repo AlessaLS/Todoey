@@ -1,10 +1,7 @@
 //
 //  AppDelegate.swift
-//  Destini
-//
-//  Created by Philipp Muellauer on 01/09/2015.
-//  Copyright (c) 2015 London App Brewery. All rights reserved.
-//
+
+
 
 import UIKit
 
@@ -15,6 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
         
         return true
     }
